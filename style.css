@@ -1,0 +1,10 @@
+body .ytp-ad-overlay-container,
+body .ytp-ad-overlay-slot,
+body .ytp-ad-image-overlay,
+body ytd-display-ad-renderer,
+body ytd-ad-slot-renderer,
+body ytm-promoted-sparkles-web-renderer {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
