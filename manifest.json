@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Ad Cleaner",
+  "version": "0.1.0",
+  "description": "Attempts to suppress YouTube ads by skipping, hiding ad UI, and accelerating ad playback.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://m.youtube.com/*"
+  ]
+}
